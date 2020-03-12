@@ -128,3 +128,7 @@ body {
 .portfolio__item:nth-child(3) {
   background: url("../img/03.jpg") center/cover no-repeat;
 }
+
+.portfolio__item:nth-child(4) {
+  background: url("../img/03.jpg") center/cover no-repeat;
+}
