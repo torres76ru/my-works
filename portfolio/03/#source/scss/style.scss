@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap');
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+body{
+	font-family: 'Lato';
+}
+.wrapper{
+	widows: 100%;
+	height: 100%;
+}
+
+.mainblock {
+	position: relative;
+	background: url('../img/bg2.jpg') center/cover no-repeat;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	padding: 50px 0;
+	&__content{
+	}
+	&__logo {
+		display: block;
+		margin: 9% 0 9% 0;
+		img{
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	&__text {
+		color: #ffffff;
+		position: relative;
+		line-height: 44px;
+		margin: 0 0 30% 0;
+		padding: 0 0 45px 0;
+		&:after{
+			content:'';
+			position: absolute;
+			width: 105px;
+			height: 2px;
+			background: #fff;
+			bottom: 0;
+			left: 50%;
+			margin: 0 0 0 -52.5px;
+		}
+	}
+	&__title {
+		font-size: 34px;
+		
+		text-transform: uppercase;
+		font-weight: 900;
+		letter-spacing: 5.5px;
+
+	}
+	&__subtitle {
+		
+		font-size: 26px;
+		letter-spacing: 4.15px;
+		font-weight: 400;
+		
+	}
+	&__footer{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+	&__btn {
+		margin: 0 auto 80px;
+	}
+}
+.container {
+	margin: 0 auto;
+	max-width: 1103px;
+
+}
+.btn {
+	display: inline-block;
+	height: 47px;
+	line-height: 45px;
+	padding: 0 42px;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.67px;
+	border: 1px solid #000;
+	color: #000;
+	&_w{
+		border: 1px solid #fff;
+		color: #fff;
+	}
+}
+.content__menu{
+	margin: 22px 0px;
+}
+.menu {
+	
+	&__items {}
+	&__list {
+		display: flex;
+		justify-content: center;
+		font-size: 15px;
+		text-transform: uppercase;
+		color: #3c3c3c;
+
+	}
+	&__item {
+		margin: 0px 22.5px 0px;
+	}
+	&__link {
+		color: #3c3c3c;
+		&_act {
+			color: #ada074;
+			font-weight: 700;
+		}
+	}
+}
+
+.about {
+	text-align: center;
+	margin: 120px 0 90px 0;
+	&__top {
+		margin: 0 0 65px 0;
+		
+	}
+	&__title {
+		margin: 0 0 37px 0;
+		
+	}
+	&__text {
+		max-width: 680px;
+		color: #868585;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 25.89px;
+		margin: 0px auto;
+	}
+	&__row {
+		display: flex;
+		margin: 0px -15px;
+	}
+	&__column {
+		flex: 0 0 33.333%
+	}
+	.container{
+		max-width: 823px;
+	}
+}
+
+.title {
+		position: relative;
+		font-size: 34px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 6px;
+		text-align: center;
+		padding: 0 0 31px 0;
+		&:after{
+			content: '';
+			position: absolute;
+			height: 1px;
+			width: 81px;
+			background-color: #000;
+			bottom: 0;
+			left: 50%;
+			margin: 0 0 0 -40.5px;
+		}
+}
+.item-about {
+	&__icon {
+		width: 92px;
+		height: 92px;
+		margin: 0px auto 40px;
+	}
+	&__title {
+		font-size: 22px;
+		text-transform: uppercase;
+		letter-spacing: 3.52px;
+		margin: 0 auto 35px;
+	}
+	&__text {
+		color: #868585;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 26px;
+		max-width: 250px;
+		margin: 0px auto 30px;
+	}
+}
+
+.portfolio {
+	background-color: #f3f3f3;
+	padding: 100px 0px 60px 0px;
+	text-align: center;
+	&__title {
+		margin: 0px 0px 50px 0px;
+	}
+	&__menu {
+		margin: 0px 0px 130px 0px;
+	}
+	&__items {
+		display:flex;
+		flex: 0 0 50%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0 0 48px;
+	}
+	&__item {
+		width: 538px;
+		height: 365px;
+		background-color: #eaeaea;
+		margin: 0 0 16px;
+	}
+	&__btn {
+		margin: 0 auto;
+	}
+}
+
+.our-partners {
+	height: 390px;
+	background:url('../img/bg2.jpg') center/cover no-repeat;
+	padding: 100px 0;
+	text-align: center;
+	&__text {
+		display: inline-block;
+		color: #ffffff;
+		font-size: 30px;
+		font-weight: 300;
+		letter-spacing: 1.8px;
+		margin: 0px 0 90px 0;
+	}
+	&__row {
+		display: flex;
+		max-width: 584px;
+		margin: 0 auto;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.contacts {
+	padding: 180px 0px 100px 0px;
+	&__title{
+		margin: 0px 0px 120px 0px;
+	}
+	&__body {
+		display:flex;
+		margin: 0px -25px;
+	}
+	&__column {
+		flex: 0 1 50%;
+		margin: 0px 25px;
+	}
+	&__form {
+		text-align: right;
+	}
+	&__content {
+		max-width: 260px;
+	}
+	&__text {
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 26px;
+		margin: 0px 0px 35px 0px;
+	}
+	&__name {
+		font-size: 14px;
+		font-weight: 700;
+		margin: 0px 0px 25px 0px;
+	}
+	&__social {}
+	&__email {
+		font-size: 14px;
+		a{
+			font-weight: 700;
+			color: #000;
+		}
+	}
+}
+
+.form-contacts {
+	&__body{
+		display: inline-block;
+		width: 100%;
+		max-width: 385px;
+	}
+	&__row {
+		display: flex;
+		margin: 0px -15px 70px -15px;
+	}
+	&__column {
+		flex: 0 1 50%;
+		padding: 0px 15px;
+	}
+	&__input {}
+	&__label {
+		font-size: 14px;
+		font-weight: 700;
+		text-align: left;
+		margin: 0px 0px 10px 0px;
+		text-transform: uppercase;
+		letter-spacing: 0.84px;
+	}
+	&__btn {
+		margin: 35px 0 0 0;
+		background-color: #fff;
+	}
+}
+.input {
+	position: relative;
+	height: 50px;
+	border-radius: 0 !important;
+	width: 100%;
+	display: block;
+	font-size: 15px;
+	padding: 0px 20px;
+	background-color: #f8f7f7;
+	border-top: 1px solid #000;
+}
+textarea.input{
+	resize:none;
+	height: 117px;
+	padding: 10px 20px;
+}
+.social {
+	margin: 0px 0px 15px 0px;
+	display: flex;
+	&__item {
+		margin: 0px 15px 0px 0px;
+	}
+}
+
+.footer {
+	background-color: #3c3c3c;
+	padding: 48px 0;
+	&__body {
+		text-align: center;
+	}
+	&__logo{
+		display: inline-block;
+		margin: 0 0 40px 0;
+	}
+	&__menu {
+		text-align: center;
+	}
+	&__list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0px 0px 34px 0px;
+	}
+	&__link {
+		color: #a4a4a4;
+		font-size: 14px;
+		font-weight: 400;
+		margin: 0 15px;
+	}
+	&__text {
+		color: #6c6c6c;
+		font-family: "Myriad Pro";
+		font-size: 14px;
+		font-weight: 400;
+	}
+}
+.container {
+}

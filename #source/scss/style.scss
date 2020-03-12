@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap');
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+body{
+	font-family: 'Lato';
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1103px;
+}
+.portfolio {
+	background-color: #f3f3f3;
+	padding: 100px 0px 60px 0px;
+	text-align: center;
+	&__title {
+		margin: 0px 0px 50px 0px;
+	}
+	&__menu {
+		margin: 0px 0px 130px 0px;
+	}
+	&__items {
+		display:flex;
+		flex: 0 0 50%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0 0 48px;
+	}
+	&__item {
+		width: 538px;
+		height: 365px;
+		background-color: #eaeaea;
+		margin: 0 0 16px;
+		&:nth-child(1){
+			background: url("../img/01.jpg") center/cover no-repeat;
+		}
+		&:nth-child(2){
+			background: url("../img/02.jpg") center/cover no-repeat;
+		}
+		&:nth-child(3){
+			background: url("../img/03.jpg") center/cover no-repeat;
+		}
+	}
+}
