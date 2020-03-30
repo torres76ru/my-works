@@ -137,6 +137,10 @@ body {
   background: url("../img/05.jpg") center/cover no-repeat;
 }
 
+.portfolio__item:nth-child(6) {
+  background: url("../img/06.jpg") center/cover no-repeat;
+}
+
 .button {
   position: relative;
   display: inline-block;
